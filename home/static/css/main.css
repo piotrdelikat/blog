@@ -1,0 +1,17 @@
+h1
+h2
+{
+    color: #FCA205;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.intro.lead
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p
+{
+    font-family: 'Lora', serif;
+    font-size: 18px
+}
