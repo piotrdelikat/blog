@@ -1,4 +1,8 @@
 h1
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+
 h2
 {
     color: #FCA205;
@@ -14,4 +18,10 @@ p
 {
     font-family: 'Lora', serif;
     font-size: 18px
+}
+
+.card
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

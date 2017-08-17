@@ -2,7 +2,31 @@
 
 {% block content %}
 
-    <h1>Web Development</h1>
-    <h1>Data Analysis</h1>
+<div class="container">
+    <h1 class="display-1 align-baseline">Web Development</h1>
+    <h1 class="display-2">Data Analysis</h1>
+    <h1 class="display-3">Python Programming</h1>
+</div>
+<div class="container">
+    <div class="card-deck text-center">
+      <div class="card">
+          Data Scraping
+      </div>
+      <div class="card">
+          Data Manipulation
+      </div>
+      <div class="card">
+          Visualisation
+      </div>
+      <div class="card">
+          Put it online as an Webapp
+      </div>
+    </div>
+    <div class="container">
+        {% load staticfiles %}
+        <img src="{% static 'img/windmail.jpg' %}" class="img-fluid" alt="Responsive image">
+    </div>
+</div>
+
 
 {% endblock %}
