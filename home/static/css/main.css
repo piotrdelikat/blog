@@ -1,3 +1,10 @@
+html,
+body,
+.location
+{
+    height:100%;
+}
+
 h1
 {
     font-family: 'Titillium Web', sans-serif;
@@ -5,7 +12,6 @@ h1
 
 h2
 {
-    color: #FCA205;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,4 +30,41 @@ p
 {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.landing
+{
+    height: 1000px;
+    max-width: 100%;
+}
+
+.offer
+{
+
+    margin-left: 3%;
+}
+
+.card-deck
+{
+    margin-bottom: 5%;
+}
+
+.location
+{
+    max-width:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.location h1
+{
+    position-top:50%;
+    color:white;
+}
+
+.material-icons
+{
+    margin-bottom: 25px;
 }
