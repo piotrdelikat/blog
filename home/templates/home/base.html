@@ -13,8 +13,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Titillium+Web" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css" type="text/css" />
         {% load staticfiles %}
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.js"></script>
+
     </head>
     <body>
         <header>
@@ -25,5 +29,23 @@
         </header>
                 {% block content %}
                 {% endblock %}
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                  <a href="https://github.com/piotrdelikat"><i class="fa fa-3x fa-github"></i></a>
+              </div>
+              <div class="col-md-2 col-sm-6 paddingtop-bottom">
+
+              </div>
+              <div class="col-md-3 col-sm-6 paddingtop-bottom">
+
+              </div>
+              <div class="col-md-3 col-sm-6 paddingtop-bottom">
+
+              </div>
+            </div>
+          </div>
+        </footer>
     </body>
 </html>

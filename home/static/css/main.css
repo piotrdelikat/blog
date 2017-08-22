@@ -68,3 +68,23 @@ p
 {
     margin-bottom: 25px;
 }
+
+.bk-root
+{
+    height: 1100px;
+}
+
+.bk-plot-layout
+{
+    margin: 0 auto;
+}
+
+.bk-toolbar-wrapper
+{
+    display: none;
+}
+
+i.fa
+{
+    color: black;
+}

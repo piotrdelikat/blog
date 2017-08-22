@@ -1,4 +1,4 @@
-{% extends "home/header.html"%}
+{% extends "home/base.html"%}
 
 {% block content %}
 
@@ -33,6 +33,9 @@
       </div>
     </div>
 </div>
+
+{% include "home/includes/v_map_visualisation.html" %}
+
     {% load staticfiles %}
 <div class="container location" style="background: url('{% static 'img/windmill_cropped.jpg' %}')no-repeat center center fixed;">
     <h1 class="text-center">Currently I am available in The Hague, Netherlands</h1>
