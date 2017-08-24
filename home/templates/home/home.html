@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container landing">
-    <div class="w-75 h-75 offer">
+    <div class="offer">
         <h1 class="display-1 align-baseline">Web Development</h1>
         <h1 class="display-2">Data Analysis</h1>
         <h1 class="display-3">Python Programming</h1>
@@ -15,12 +15,26 @@
           <i class="material-icons md-36">language forward library_books</i>
           <h4 class="card-title">Data Collection</h4>
           <p class="card-text">Obtaining data from various sources as websites, APIs, databases</p>
-          <a href="#" class="btn btn-primary">Ask about specific data</a>
+          <a href="#" class="btn btn-card btn-primary">Ask about specific data</a>
       </div>
       <div class="card">
           <i class="material-icons md-36">view_list find_in_page</i>
           <h4 class="card-title">Pre-Processing and Analysis</h4>
           <p class="card-text">Combining data from different sources, dataset cleaning</p>
+          <button class="btn btn-card btn-info" type="button" data-toggle="collapse" data-target="#datatools" aria-expanded="false" aria-controls="datatools">
+          See list of data tools I am familiar with
+          </button>
+          <div class="collapse" id="datatools">
+            <ul>
+                <li>Pandas</li>
+                <li>matplotlib</li>
+                <li>Numpy</li>
+                <li>BeautifulSoup4</li>
+                <li>NLTK</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+            </ul>
+          </div>
       </div>
       <div class="card">
           <i class="material-icons md-36">assessment pie_chart</i>
@@ -31,12 +45,28 @@
           <i class="material-icons md-36">web</i>
           <h4 class="card-title">Web Development</h4>
           <p class="card-text">Providing you with crafted web application where you can explore your data and make better decision based on it</p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="collapseExample">See technology I am familiar with</a>
-          <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
+          <button class="btn btn-card btn-info" type="button" data-toggle="collapse" data-target="#webtechnology" aria-expanded="false" aria-controls="webtechnology">
+          See list of web technology I am familiar with
+          </button>
+          <div class="collapse" id="webtechnology">
+            <ul>
+                <li>HTML</li>
+                <li>CSS/SASS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Angular</li>
+                        <li>D3.js</li>
+                    </ul>
+                </li>
+                <li>Python
+                    <ul>
+                        <li>Django</li>
+                        <li>Bokeh</li>
+                    </ul>
+                </li>
+            </ul>
           </div>
       </div>
     </div>
@@ -44,7 +74,7 @@
 <div class="container">
     <h2 class="text-center">Recently I have been curious about market potential for Vegan Restaurants in USA</h2>
     <h5 class="text-muted text-center">explore data by yourself on the map below</h5>
-    <a href="/blog/1" class="btn btn-primary" style="display: block" >Read more about the study on the blog</a>
+    <a href="/blog/1" class="btn btn-primary" id="to_post">Read more about the study</a>
 </div>
 
 {% include "home/includes/v_map_visualisation.html" %}

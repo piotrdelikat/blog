@@ -1,3 +1,5 @@
+/* Elements */
+
 html,
 body,
 .location
@@ -26,28 +28,93 @@ p
     font-size: 18px
 }
 
+a
+a:hover
+{
+    color: white;
+    background-color: #138496;
+}
+
+footer
+{
+    background: #191F2E;
+}
+
+/*Buttons*/
+
+header a
+{
+    color: black;
+}
+
+.btn
+{
+    white-space: normal;
+}
+
+.btn-primary,
+.btn-info
+{
+    padding: 1rem .75rem;
+    border: none;
+    background: #6A677A;
+}
+
+.btn-card
+{
+    width: 100%;
+    white-space: normal;
+}
+
+a.btn-primary:hover
+{
+    background-color: #138496;
+}
+
+#to_post
+{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+/*Cards*/
+
 .card
 {
+    background: #F5F5F5;
+    border: none;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.landing
-{
-    height: 1000px;
-    max-width: 100%;
-}
-
-.offer
-{
-
-    margin-left: 3%;
 }
 
 .card-deck
 {
     margin-bottom: 5%;
 }
+
+ul
+{
+    margin-top: 5%;
+    text-align: left;
+}
+
+
+/*Containres*/
+
+.landing
+{
+    max-width: 100%;
+}
+
+.offer
+{
+    padding: 25% 0;
+    margin-left: 3%;
+}
+
 
 .location
 {
@@ -64,15 +131,19 @@ p
     color:white;
 }
 
-.material-icons
-{
-    margin-bottom: 25px;
-}
+
+/*Visualisation*/
 
 .bk-root
+.bk-canvas
 {
-    height: 800px;
+    max-width: 100%;
+    padding-left: 15%;
+    padding-right:15%;
+    padding-bottom:15%;
 }
+
+
 
 .bk-plot-layout
 {
@@ -84,7 +155,43 @@ p
     display: none;
 }
 
+/*Icons*/
+
 i.fa
 {
     color: black;
+}
+
+.material-icons
+{
+    margin-bottom: 25px;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+html {
+      font-size: 14px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+html {
+            font-size: 16px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+html {
+        font-size: 18px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+html {
+        font-size: 20px;
+    }
 }
