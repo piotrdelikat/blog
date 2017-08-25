@@ -7,7 +7,7 @@
             {% for post in posts %}
             <div class="post">
                     <h1><a href="/blog/{{post.id}}">{{ post.title }}</a> </h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
+                    <p>{{ post.text|safe|linebreaksbr }}</p>
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
