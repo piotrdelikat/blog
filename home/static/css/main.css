@@ -1,8 +1,7 @@
 /* Elements */
 
 html,
-body,
-.location
+body
 {
     height:100%;
 }
@@ -22,6 +21,7 @@ div.intro.lead
     font-family: 'Montserrat', sans-serif;
 }
 
+
 p
 {
     font-family: 'Lora', serif;
@@ -35,8 +35,15 @@ a:hover
     background-color: #138496;
 }
 
+.location
+{
+    height:758px;
+}
+
 footer
 {
+    text-align: center;
+    color: white;
     background: #191F2E;
 }
 
@@ -55,7 +62,7 @@ header a
 .btn-primary,
 .btn-info
 {
-    padding: 1rem .75rem;
+    padding: 1.5rem .75rem;
     border: none;
     background: #6A677A;
 }
@@ -63,7 +70,11 @@ header a
 .btn-card
 {
     width: 100%;
+    height: 25%;
+    vertical-align: middle;
     white-space: normal;
+    position: absolute;
+    top: 70%;
 }
 
 a.btn-primary:hover
@@ -95,6 +106,11 @@ a.btn-primary:hover
     margin-bottom: 5%;
 }
 
+.collapse show
+{
+    background:#F5F5F5;
+}
+
 ul
 {
     margin-top: 5%;
@@ -111,7 +127,7 @@ ul
 
 .offer
 {
-    padding: 25% 0;
+    padding: 18% 0;
     margin-left: 3%;
 }
 
@@ -127,7 +143,6 @@ ul
 
 .location h1
 {
-    position-top:50%;
     color:white;
 }
 
@@ -136,8 +151,15 @@ ul
 
 .bk-root
 .bk-canvas
+.bk-plot-layout
+.bk-layout-scale_width
 {
     max-width: 100%;
+    max-height:100%;
+}
+
+
+/*
     padding-left: 15%;
     padding-right:15%;
     padding-bottom:15%;
@@ -149,6 +171,7 @@ ul
 {
     margin: 0 auto;
 }
+*/
 
 .bk-toolbar-wrapper
 {
@@ -165,6 +188,19 @@ i.fa
 .material-icons
 {
     margin-bottom: 25px;
+}
+
+/*Blog*/
+
+.post a
+{
+   color: black;
+}
+
+.post a:hover
+{
+    color: #138496;
+    text-decoration: none;
 }
 
 

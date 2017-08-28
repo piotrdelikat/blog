@@ -11,7 +11,7 @@
 </div>
 <div class="container">
     <div class="card-deck text-center">
-      <div class="card">
+      <div class="card" style="height:470px;">
           <i class="material-icons md-36">language forward library_books</i>
           <h4 class="card-title">Data Collection</h4>
           <p class="card-text">Obtaining data from various sources as websites, APIs, databases</p>
@@ -36,7 +36,7 @@
             </ul>
           </div>
       </div>
-      <div class="card">
+      <div class="card" style="height:470px;">
           <i class="material-icons md-36">assessment pie_chart</i>
           <h4 class="card-title">Data Visualisation</h4>
           <p class="card-text">Putting data into insightful, interactive graphical representation</p>
@@ -73,15 +73,15 @@
 </div>
 <div class="container">
     <h2 class="text-center">Recently I have been curious about market potential for Vegan Restaurants in USA</h2>
-    <h5 class="text-muted text-center">explore data by yourself on the map below</h5>
+    <h5 class="text-muted text-center mt-4 mb-4">explore data by yourself on the map below</h5>
     <a href="/blog/1" class="btn btn-primary" id="to_post">Read more about the study</a>
 </div>
-
+<div class="map-home">
 {% include "home/includes/v_map_visualisation.html" %}
-
+</div>
     {% load staticfiles %}
 <div class="container location" style="background: url('{% static 'img/windmill_cropped.jpg' %}')no-repeat center center fixed;">
-    <h1 class="text-center">Currently I am available in The Hague, Netherlands</h1>
+    <h1 class="text-center pt-5 pb-5">Currently I am available in The Hague, Netherlands</h1>
 </div>
 
 {% endblock %}
