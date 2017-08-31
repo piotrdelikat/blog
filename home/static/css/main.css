@@ -202,6 +202,31 @@ ul
     display: none;
 }
 
+/*Legend*/
+
+.my-legend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+.my-legend .legend-scale ul li {
+    font-size: 14px;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 5%;
+}
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
 /*Icons*/
 
 i.fa
@@ -252,10 +277,10 @@ textarea {
 /*Small devices (landscape phones, 576px and up)
 @media (min-width: 576px)*/
 
-@media only screen and (min-width : 320px){
+@media (min-width : 320px){
 html
 {
-    font-size: 18px;
+    font-size: 16px;
 }
 .card-deck
 {
@@ -272,6 +297,10 @@ h2
     font-size: 1.5rem;
 }
 
+h4
+{
+    font-size: 0.75rem;
+}
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -279,7 +308,6 @@ h2
 html {
             font-size: 18px;
 }
-
 }
 
 
@@ -288,6 +316,10 @@ html {
 html {
         font-size: 18px;
     }
+h4
+{
+    font-size: 1.25rem;
+}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -300,9 +332,10 @@ html {
     font-size: 6em;
 
 }
-
-.btn-card
+.my-legend
 {
-
+    position: relative;
+    bottom: 120%;
+    z-index: 100;
 }
 }
