@@ -1,5 +1,10 @@
 /* Elements */
 
+html
+{
+    font-size: 20px;
+}
+
 html,
 body
 {
@@ -14,6 +19,12 @@ h1
 h2
 {
     font-family: 'Montserrat', sans-serif;
+}
+
+.offer h1
+{
+    font-size: 6em;
+
 }
 
 div.intro.lead
@@ -81,7 +92,6 @@ header a
 
 .btn-card
 {
-    padding: 15% 0;
     width: 100%;
     height: 120px;
     vertical-align: middle;
@@ -144,7 +154,7 @@ ul
 
 .offer
 {
-    padding: 18% 0;
+    padding: 15% 0;
     margin-left: 3%;
 }
 
@@ -203,6 +213,13 @@ ul
 }
 
 /*Legend*/
+
+.my-legend
+{
+    position: relative;
+    bottom: 120%;
+    z-index: 100;
+}
 
 .my-legend .legend-scale ul {
     margin: 0;
@@ -274,10 +291,8 @@ textarea {
 }
 
 
-/*Small devices (landscape phones, 576px and up)
-@media (min-width: 576px)*/
-
-@media (min-width : 320px){
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px){
 html
 {
     font-size: 16px;
@@ -290,7 +305,8 @@ html
 
 .card
 {
-padding-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10%;
 }
 h2
 {
@@ -303,16 +319,36 @@ h4
 }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
 html {
             font-size: 18px;
 }
+.card-deck
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.card
+{
+    padding-bottom: 20px;
+    margin-bottom: 10%;
+}
+h2
+{
+    font-size: 1.5rem;
+}
+
+h4
+{
+    font-size: 0.75rem;
+}
 }
 
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
 html {
         font-size: 18px;
     }
@@ -322,20 +358,7 @@ h4
 }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-html {
-        font-size: 20px;
-    }
-.offer h1
-{
-    font-size: 6em;
+/*Large devices (desktops, less than 1200px))*/
+@media (max-width: 1199px) {
 
-}
-.my-legend
-{
-    position: relative;
-    bottom: 120%;
-    z-index: 100;
-}
 }
