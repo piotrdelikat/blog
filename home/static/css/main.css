@@ -21,12 +21,6 @@ h2
     font-family: 'Montserrat', sans-serif;
 }
 
-.offer h1
-{
-    font-size: 6em;
-
-}
-
 div.intro.lead
 {
     font-family: 'Montserrat', sans-serif;
@@ -185,21 +179,6 @@ ul
     max-height:100%;
 }
 
-
-/*
-    padding-left: 15%;
-    padding-right:15%;
-    padding-bottom:15%;
-}
-
-
-
-.bk-plot-layout
-{
-    margin: 0 auto;
-}
-*/
-
 .bk-tooltip
 {
    font-family: 'Titillium Web', serif !important;
@@ -213,13 +192,6 @@ ul
 }
 
 /*Legend*/
-
-.my-legend
-{
-    position: relative;
-    bottom: 120%;
-    z-index: 100;
-}
 
 .my-legend .legend-scale ul {
     margin: 0;
@@ -359,6 +331,16 @@ h4
 }
 
 /*Large devices (desktops, less than 1200px))*/
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
+.offer h1
+{
+    font-size: 6em;
+}
 
+.my-legend
+{
+    position: relative;
+    bottom: 120%;
+    z-index: 100;
+}
 }
