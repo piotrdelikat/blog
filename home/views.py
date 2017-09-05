@@ -8,6 +8,9 @@ from .forms import ContactForm
 def index(request):
     return render(request, 'home/home.html')
 
+def privacy(request):
+    return render(request, 'home/privacy.html')
+
 def contact(request):
     form_class = ContactForm
 

@@ -27,17 +27,23 @@ div.intro.lead
 }
 
 
-p
+p,
+.privacy
 {
     font-family: 'Lora', serif;
     font-size: 18px
 }
 
 a
+{
+    color:black;
+}
+
+
 a:hover
 {
-    color: white;
-    background-color: #138496;
+    color: #138496;
+    text-decoration: none;
 }
 
 .location
@@ -167,6 +173,10 @@ ul
     color:white;
 }
 
+.privacy ul
+{
+    margin-top: 0;
+}
 
 /*Visualisation*/
 
