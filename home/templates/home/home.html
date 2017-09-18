@@ -1,7 +1,7 @@
 {% extends "home/base.html"%}
 
 {% block content %}
-
+{% load staticfiles %}
 <div class="container landing">
     <div class="offer">
         <h1>Web Development</h1>
@@ -98,7 +98,17 @@
         </div>
     </div>
 </div>
-    {% load staticfiles %}
+<div class="container map_home">
+    <div class="row">
+        <div class="col-md-11 mx-auto">
+            <h4 class="text-center">My very first HTML, CSS, JS site of a business I have co-created</h4>
+            <a href="static/frankentie_promo/index.html">
+                <img class="link" alt="Frankentie promo website" src="{% static 'img/frankentie_img.jpg' %}">
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="container location" style="background: url('{% static 'img/windmill_cropped.jpg' %}')no-repeat center center fixed;">
     <div class="col-md-11 pt-4 ml-md-auto">
         <h2 class="text-center pt-5 pb-5">Currently living in The Hague, Netherlands</h2>

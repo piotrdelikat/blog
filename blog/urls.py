@@ -5,7 +5,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(model= Post, template_name="blog/post.html")),
-    url(r'^frankentie_promo/', views.promo, name='promo')
+    url(r'^(?P<pk>\d+)$', DetailView.as_view(model= Post, template_name="blog/post.html"))
 ]
 
