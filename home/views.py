@@ -11,9 +11,6 @@ def index(request):
 def privacy(request):
     return render(request, 'home/privacy.html')
 
-def promo(request):
-    return render(request, 'static/frankentie_promo/index.html')
-
 def contact(request):
     form_class = ContactForm
 
