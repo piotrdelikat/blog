@@ -5,6 +5,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^privacy-policy/$', views.privacy, name='privacy'),
-    url(r'^frankentie_promo/index.html', views.promo, name='promo')
+    url(r'^frankentie_promo/', views.promo, name='promo')
 ]
 
