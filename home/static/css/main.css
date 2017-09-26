@@ -125,7 +125,10 @@ form button
     background: #F5F5F5;
     border: none;
     padding-top: 50px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .card-deck
@@ -177,6 +180,14 @@ ul
 {
     margin-top: 0;
 }
+
+/*Cards*/
+
+.card-header
+{
+    background-color: #F5F5F5 !important;
+}
+
 
 /*Visualisation*/
 
@@ -308,6 +319,11 @@ h2
 h4
 {
     font-size: 0.75rem;
+}
+
+.hide-mobile
+{
+    display: none;
 }
 }
 
