@@ -2,7 +2,7 @@
 
 {% block content %}
 {% load staticfiles %}
-<div class="container landing">
+<div class="container-fluid landing">
     <div class="offer">
         <h1>Web Development</h1>
         <h1>Data Analysis</h1>
@@ -78,46 +78,44 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="card">
-            <div class="card-header map_home">
-                <h4 class="card-title text-center pb-4">Map of market opportunity for vegan restaurants in the USA</h4>
-                <div class="col-md-11 mx-auto">
-                {% include "home/includes/v_map_visualisation.html" %}
-                    <div class='my-legend mt-3 mb-3 ml-3'>
-                        <div class='legend-scale'>
-                          <ul class='legend-labels'>
-                            <li><span style='background:#006d2c;'></span>States with the most vegan options per potential customer</li>
-                            <li><span style='background:#a1d99b;'></span>Considerable high market potential</li>
-                            <li><span style='background:#f7fcf5;'></span>Almost no fully vegan options</li>
-                          </ul>
-                        </div>
+    <div class="card">
+        <div class="card-header map_home">
+            <h4 class="card-title text-center pb-4">Map of market opportunity for vegan restaurants in the USA</h4>
+            <div class="mx-auto">
+            {% include "home/includes/v_map_visualisation.html" %}
+                <div class='my-legend mt-3 mb-3 ml-3'>
+                    <div class='legend-scale'>
+                      <ul class='legend-labels'>
+                        <li><span style='background:#006d2c;'></span>States with the most vegan options per potential customer</li>
+                        <li><span style='background:#a1d99b;'></span>Considerable high market potential</li>
+                        <li><span style='background:#f7fcf5;'></span>Almost no fully vegan options</li>
+                      </ul>
                     </div>
                 </div>
             </div>
-            <div class="card-body col-md-10 mx-auto">
-            <p class="card-text">The goal for this project was to explore market potential for vegan restaurants in the USA,
-                by taking under account number of restaurant per state citizen and interest in veganism in each state</p>
-            <a href="/blog/1" class="btn btn-primary">Read more about the study</a>
-            <h6 class="text-muted mt-4 mb-4">explore data by hovering over each state</h6>
-            </div>
+        </div>
+        <div class="card-body col-md-10 mx-auto">
+        <p class="card-text">The goal for this project was to explore market potential for vegan restaurants in the USA,
+            by taking under account number of restaurant per state citizen and interest in veganism in each state</p>
+        <a href="/blog/1" class="btn btn-primary">Read more about the study</a>
+        <p class="text-muted mt-4 mb-4">*explore data by hovering over each state</p>
         </div>
     </div>
 </div>
 
 <div class="container hide-mobile">
-    <div class="row">
-        <div class="card">
-            <div class="card-header">
-                <div class="col-md-12 mx-auto">
-                {% include "home/includes/sp500_sectors_mean.html" %}
-                </div>
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title text-center pb-4">Graph of mean prices of stocks from all sectors in S&P500 index</h4>
+            <div class="col-md-12 mx-auto">
+            {% include "home/includes/sp500_sectors_mean.html" %}
             </div>
-            <div class="card-body col-md-10 mx-auto">
-            <p class="card-text">On the plot we can see the mean price of stocks from S&P 500 from different economic sectors.\n
-                For comparison, the red line on the plot is the mean of the full Standard & Poor's index.</p>
-            <a href="#" class="btn btn-primary">Read more about the plot</a>
-            </div>
+        </div>
+        <div class="card-body col-md-10 mx-auto">
+        <p class="card-text">On the graph we can see the mean price of stocks from S&P 500 from different economic sectors.<br>
+            For comparison, the red line on the plot is the mean price of all stocks in Standard & Poor's index.</p>
+        <a href="#" class="btn btn-primary">Read more about the plot</a>
+            <p class="text-muted mt-4 mb-4">*use Box Zoom to have a closer look at prices at recent years</p>
         </div>
     </div>
 </div>
@@ -127,20 +125,18 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="card">
-            <div class="card-header">
-                <div class="col-md-12 mx-auto">
-                <h4 class="text-center">First website of a business I have co-created</h4>
-                <a href="static/frankentie_promo/index.html">
-                    <img class="link" alt="Frankentie promo website" src="{% static 'img/frankentie_img.jpg' %}">
-                </a>
-                </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="mx-auto">
+            <h4 class="text-center">Promotional website of a business I have co-created</h4>
+            <a href="static/frankentie_promo/index.html">
+                <img class="link" alt="Frankentie promo website" src="{% static 'img/frankentie_img.jpg' %}">
+            </a>
             </div>
-            <div class="card-body col-md-10 mx-auto">
-            <p class="card-text">Made with HTML, CSS+SCSS and some jQuery events</p>
-            <a href="static/frankentie_promo/index.html" class="btn btn-primary">Go to the website</a>
-            </div>
+        </div>
+        <div class="card-body col-md-10 mx-auto">
+        <p class="card-text">Made with HTML, CSS+SCSS and some jQuery events</p>
+        <a href="static/frankentie_promo/index.html" class="btn btn-primary">Go to the website</a>
         </div>
     </div>
 </div>
