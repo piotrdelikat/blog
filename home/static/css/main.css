@@ -56,18 +56,34 @@ label
     display: block;
 }
 
+/*Footer*/
+
 footer
 {
-    height: 45%;
+    min-height: 300px;
     text-align: center;
-    color: white;
     background: #191F2E;
 }
 
-.copy
+footer i.fa
 {
-    font-size: 10px;
+    color: white;
+}
+
+.fa-stack
+{
+    height:100%;
+}
+
+footer p
+{
+    position: relative;
+    font-family: 'Titillium Web';
+    font-size: 11px;
+    opacity: 0.3;
     color: black;
+    margin-bottom: 0;
+    padding-bottom: 1%;
 }
 
 /*Buttons*/
@@ -130,6 +146,12 @@ form button
 {
     margin-bottom: 5%;
 }
+
+.card-deck .card
+{
+    margin-bottom: 5%;
+}
+
 
 .collapse show
 {
@@ -262,7 +284,8 @@ textarea {
 }
 
 
-.contact i
+.contact i,
+.links i
 {
     color: #F5F5F5;
 }
@@ -288,16 +311,17 @@ html
 {
     font-size: 16px;
 }
-.card-deck
+.card-deck .card
 {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card
 {
     padding-bottom: 20px;
     margin-bottom: 10%;
+    padding: 0.75rem;
 }
 h2
 {
@@ -322,8 +346,7 @@ html {
 }
 .card-deck
 {
-    margin-left: 3%;
-    margin-right: 3%;
+    display: inline;
 }
 
 .card
@@ -357,6 +380,20 @@ html {
 h4
 {
     font-size: 1.25rem;
+}
+
+.card-deck
+{
+    display: block;
+}
+
+.card-deck .card
+{
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0;
+    margin-right: 0;
 }
 }
 
