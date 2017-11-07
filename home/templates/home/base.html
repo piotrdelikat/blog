@@ -30,10 +30,15 @@
     </head>
     <body>
         <header>
-            <div class="btn-lg d-flex justify-content-end pt-4 pb-5 pr-3">
-               <a class="btn btn-default" href="/">Home</a>
-               <a class="btn btn-default" href="/contact/">Contact</a>
-               <a class="btn btn-default" href="/blog/">Blog</a>
+            <nav class="d-flex justify-content-end pt-4 pr-3">
+                <a class="btn btn-default" href="/">Home</a>
+                <a class="btn btn-default" href="/contact/">Contact</a>
+                <a class="btn btn-default" href="/blog/">Blog</a>
+            </nav>
+            <div class="logo">
+                <a href="/">
+                   <img alt="logo" src="{% static 'img/logo-96x96.png' %}">
+                </a>
             </div>
         </header>
                 {% block content %}
