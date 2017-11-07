@@ -1,0 +1,11 @@
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'my_site_db',
+        'USER': 'username',
+        'PASSWORD': 'password',
+    }
+}
