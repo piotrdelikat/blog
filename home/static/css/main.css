@@ -89,7 +89,7 @@ footer p
 /*Logo*/
 
 .logo {
-    position: absolute;
+    position: initial;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -351,7 +351,6 @@ h4
 }
 
 .logo {
-    position: initial;
     padding-bottom: 10px;
 }
 
@@ -389,7 +388,6 @@ h4
 }
 
 .logo {
-    position: initial;
     padding-bottom: 20px;
 }
 }
@@ -420,7 +418,6 @@ h4
 }
 
 .logo {
-    position: initial;
     padding-top: 2rem;
     padding-bottom: 20px;
 }
