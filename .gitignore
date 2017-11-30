@@ -7,4 +7,5 @@ local.py
 production.py
 old_settings.py
 /static
+/node_modules
 .DS_Store
