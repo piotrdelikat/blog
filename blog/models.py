@@ -5,6 +5,7 @@ from tinymce.models import HTMLField
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
+    slug = models.SlugField()
     text = HTMLField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
