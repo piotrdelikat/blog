@@ -7,7 +7,7 @@
             {% for post in posts %}
             <div class="post">
                     <h1><a href="{% url 'blog:detail' slug=post.slug %}">{{ post.title }}</a> </h1>
-                    <p>{{ post.text|safe|linebreaksbr }}</p>
+                    <p>{{ post.snippet }}</p>
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
