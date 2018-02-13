@@ -14,186 +14,220 @@
         <h1>Python Programming</h1>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="card-deck text-center">
-          <div class="card">
-              <i class="material-icons md-36">language forward library_books</i>
-              <h4 class="card-title">Data Collection</h4>
-              <p class="card-text">Depending on what data you need I can get it from websites, APIs or databases</p>
-              <a href="/contact/" class="btn btn-card btn-info">Ask what is possible</a>
-          </div>
-          <div class="card">
-              <i class="material-icons md-36">view_list find_in_page</i>
-              <h4 class="card-title">Pre-Processing and Analysis</h4>
-              <p class="card-text">Sometimes it is possible to get crucial insights just by combining different sets of data. I use Python (Pandas) to clean and merge various data sets.</p>
-              <button class="btn btn-card btn-info" type="button" data-toggle="collapse" data-target="#datatools" aria-expanded="false" aria-controls="datatools">
-              See list of data tools I am familiar with
-              </button>
-              <div class="collapse" id="datatools">
-                <ul>
-                    <li>Pandas</li>
-                    <li>matplotlib</li>
-                    <li>Numpy</li>
-                    <li>BeautifulSoup4</li>
-                    <li>NLTK</li>
-                    <li>MySQL</li>
-                    <li>SQLite</li>
-                </ul>
-              </div>
-          </div>
-          <div class="card">
-              <i class="material-icons md-36">web</i>
-              <h4 class="card-title">Web Development</h4>
-              <p class="card-text">I can't wait to work on your website/web application using power of Python (Django) and modern JavaScript (React)</p>
-              <button class="btn btn-card btn-info" type="button" data-toggle="collapse" data-target="#webtechnology" aria-expanded="false" aria-controls="webtechnology">
-              See list of web technology I am familiar with
-              </button>
-              <div class="collapse" id="webtechnology">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS/SASS</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript
-                        <ul>
-                            <li>React</li>
-                            <li>jQuery</li>
-                            <li>Angular</li>
-                            <li>D3.js</li>
-                        </ul>
-                    </li>
-                    <li>Python
-                        <ul>
-                            <li>Django</li>
-                            <li>Bokeh</li>
-                        </ul>
-                    </li>
-                </ul>
-              </div>
-          </div>
-          <div class="card">
-              <i class="material-icons md-36">assessment pie_chart</i>
-              <h4 class="card-title">Data Visualisation</h4>
-              <p class="card-text">Let's get the most of your data with insightful, interactive visualization that I can craft with D3.js or Bokeh</p>
-          </div>
+<script src="{% static 'js/middle.bundle.js' %}" ></script>
+<div id="web" class="container-fluid">
+    <div id="invitation" class="row no-gutters" style="color:black">
+      <div class="col-8 mx-auto">
+        <h3 class="pb-4">Hi, I am Piotr</h3>
+        <h4 class="pb-4">I love building websites and web apps</h4>
+        <p class="mb-5">I can't wait to start working on your website/web application using power of modern JavaScript (React) and Python based back-end (Django)</p>
+        <div class="d-flex justify-content-between mb-5">
+          <span><i class="fab fa-2x fa-html5"></i></span>
+          <span><i class="fab fa-2x fa-css3"></i></span>
+          <span><i class="fab fa-2x fa-sass"></i></span>
+          <span><i class="fab fa-2x fa-wordpress"></i></span>
+          <span><i class="fab fa-2x fa-js"></i></span>
+          <span><i class="fab fa-2x fa-react"></i></span>
+          <span><i class="fab fa-2x fa-python"></i></span>
         </div>
+      </div>
+      <div class="container">
+          <div class="col-md-12 mt-5 ml-md-auto">
+              <h2 class="text-center">Web Development projects</h2>
+          </div>
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="col-md-11 pt-4 ml-md-auto">
-        <h2 class="text-center">See my recent data projects</h2>
-    </div>
-</div>
-<div class="container">
-    <div class="card">
-        <div class="card-header map_home">
-            <h4 class="card-title text-center pb-4">Map of market opportunity for vegan restaurants in the USA</h4>
-            <div class="mx-auto">
-            {% include "home/includes/v_map_visualisation.html" %}
-                <div class='my-legend mt-3 mb-3 ml-3'>
-                    <div class='legend-scale'>
-                      <ul class='legend-labels'>
-                        <li><span style='background:#006d2c;'></span>States with the most vegan options per potential customer</li>
-                        <li><span style='background:#a1d99b;'></span>Considerable high market potential</li>
-                        <li><span style='background:#f7fcf5;'></span>Almost no fully vegan options</li>
-                      </ul>
-                    </div>
-                </div>
+    <div class="row no-gutters align-items-center">
+        <div class="col-12 col-lg-6">
+            <div class="description text-left">
+              <h4 class="pb-4">Learn some spanish words with the demo of my languages learning app</h4>
+              <p class="pb-2">Build with React <span><i class="fab fa-2x fa-react"></i></span><br></p>
+              <p>Full, algorithm based version with more words and languages will be available soon</p>
             </div>
         </div>
-        <div class="card-body col-md-10 mx-auto">
-        <p class="card-text">The goal for this project was to explore market potential for vegan restaurants in the USA,
-            by taking under account number of restaurant per state citizen and interest in veganism in each state</p>
-        <a href="/blog/1" class="btn btn-primary">Read more about the study</a>
-        <p class="text-muted mt-4 mb-4">*explore data by hovering over each state</p>
+        <div class="col-12 col-lg-6">
+            <div id="root" class="react_app"></div>
+            <script type="text/javascript" src="{% static 'js/main.6c3000a0.js' %}"></script>
         </div>
     </div>
-</div>
-
-<div class="container hide-mobile">
-    <div class="card">
-        <div class="card-header">
-            <h4 class="card-title text-center pb-4">Graph of mean prices of stocks from all sectors in S&P500 index</h4>
-            <div class="col-md-12 mx-auto">
-            {% include "home/includes/sp500_sectors_mean.html" %}
-            </div>
-        </div>
-        <div class="card-body col-md-10 mx-auto">
-        <p class="card-text">On the graph we can see the mean price of stocks from S&P 500 from different economic sectors.<br>
-            For comparison, the red line on the plot is the mean price of all stocks in Standard & Poor's index.</p>
-        <a href="/blog/7" class="btn btn-primary">Read more about the plot</a>
-            <p class="text-muted mt-4 mb-4">*use Box Zoom to have a closer look at prices at recent years</p>
-        </div>
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+      <div class="col-md-6">
+          <a href="http://www.2create.com.pl" target="_blank">
+              <img class="img-fluid" alt="2Create Website" src="{% static 'img/2create-website.jpg' %}">
+          </a>
+      </div>
+      <div class="col-md-6">
+          <div class="description text-right">
+              <h4 class="pb-4">Website for 2Create Advertisement Agency</h4>
+              <p>Fully responsive project</p>
+              <a class="justify-content-end" href="http://www.2create.com.pl" target="_blank"><i class="far fa-2x fa-arrow-alt-circle-left"></i>&nbsp&nbspTo the website</a>
+          </div>
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="col-md-11 pt-4 ml-md-auto">
-        <h2 class="text-center">Web projects</h2>
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-6">
+          <div class="description text-left">
+              <h4 class="pb-4">E-commerce website for the business I have co-created</h4>
+              <p>Made with Wordpress and WooCommerce</p>
+              <a href="http://frankentie.com" target="_blank">To the website&nbsp&nbsp<i class="far fa-2x fa-arrow-alt-circle-right"></i></a>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <a href="http://frankentie.com" target="_blank">
+              <img class="img-fluid" alt="Frankentie e-commerce website" src="{% static 'img/Frankentie-ecommerce.jpg' %}">
+          </a>
+      </div>
     </div>
-</div>
-<div class="container-fluid">
-    <div class="row no-gutters">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
         <div class="col-md-6">
-            <div class="description">
-                <h4 class="card-title text-center pb-4">E-commerce website for the business I have co-created</h4>
-                <p class="card-text">Made with Wordpress and WooCommerce</p>
-                <a href="http://frankentie.com" class="btn btn-primary">To the website</a>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <a href="http://frankentie.com">
-                <img class="img-fluid" alt="Frankentie e-commerce website" src="{% static 'img/Frankentie-ecommerce.jpg' %}">
-            </a>
-        </div>
-    </div>
-    <div class="row no-gutters">
-        <div class="col-md-6">
-            <a href="{% static '/frankentie_promo/index.html' %}">
+            <a href="{% static '/frankentie_promo/index.html' %}" target="_blank">
                 <img class="img-fluid" alt="Frankentie promo website" src="{% static 'img/frankentie_img.jpg' %}">
             </a>
         </div>
         <div class="col-md-6">
-            <div class="description">
-                <h4 class="card-title text-center pb-4">Promotional website for Frankentie</h4>
-                <p class="card-text">Made with HTML, CSS+SCSS and some jQuery events</p>
-                <a href="static/frankentie_promo/index.html" class="btn btn-primary">To the website</a>
+            <div class="description text-right">
+                <h4 class="pb-4">Promotional website for Frankentie</h4>
+                <p>My first website made with HTML, CSS+SCSS and jQuery</p>
+                <a class="justify-content-end" href="static/frankentie_promo/index.html" target="_blank"><i class="far fa-2x fa-arrow-alt-circle-left"></i>&nbsp&nbspTo the website</a>
             </div>
         </div>
     </div>
-    <div class="row no-gutters">
-         <div class="col-md-6">
-            <div class="description">
-                <h4 class="card-title text-center pb-4">Website for 2Create Advertisement Agency</h4>
-                <p class="card-text">Fully responsive project. Bundled with webpack</p>
-                <a href="http://www.2create.com.pl" class="btn btn-primary">To the website</a>
-            </div>
-        </div>
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-6">
+          <div class="description text-left">
+              <h4 class="pb-4">Website for the best product photographer I know</h4>
+              <p>Additionally blog module build on WordPress</p>
+              <a href="http://www.martynaczernicki.com" target="_blank">To the website&nbsp&nbsp<i class="far fa-2x fa-arrow-alt-circle-right"></i></a>
+          </div>
+      </div>
         <div class="col-md-6">
-            <a href="http://www.2create.com.pl">
-                <img class="img-fluid" alt="2Create Website" src="{% static 'img/2create-website.jpg' %}">
-            </a>
-        </div>
-    </div>
-    <div class="row no-gutters">
-        <div class="col-md-6">
-            <a href="http://www.martynaczernicki.com">
+            <a href="http://www.martynaczernicki.com" target="_blank">
                 <img class="img-fluid" alt="Martyna Czernicki Website" src="{% static 'img/Martyna-Czernicki-website.jpg' %}">
             </a>
         </div>
-        <div class="col-md-6">
-            <div class="description">
-                <h4 class="card-title text-center pb-4">Website for the best Product Photographer I know</h4>
-                <p class="card-text">Additionally blog module build with Wordpress</p>
-                <a href="http://www.martynaczernicki.com" class="btn btn-primary">To the website</a>
-            </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-12 mt-5 mb-5 ml-md-auto">
+        <h2 class="text-center">Besides web developement I enjoy working with data<br>Check what I can do for you</h2>
+    </div>
+</div>
+<div class="container-fluid gradient-box-right mt-5"></div>
+<div id="offer" class="container-fluid pt-5 pb-5">
+    <div class="row text-center pl-4 pr-4">
+        <div class="col-12 col-sm-10 mx-auto col-lg-4">
+            <i class="material-icons md-36" style="color:black">language forward library_books</i>
+            <h4 class="card-title">Data Collection</h4>
+            <p class="card-text">Depending on what data you need I can scrape it from websites and get from API's or databases</p>
+            <a href="/contact/" class="btn btn-primary-outline">Ask what is possible<i class="far fa-2x fa-envelope mx-auto mt-3"></i></a>
+        </div>
+        <div class="col-12 col-sm-10 mx-auto col-lg-4">
+            <i class="material-icons md-36" style="color:black">view_list find_in_page</i>
+            <h4 class="card-title">Pre-Processing and Analysis</h4>
+            <p class="card-text">Sometimes it is possible to get crucial insights just by combining different sets of data. I use Python (Pandas) to clean and merge various data sets.</p>
+            <span>
+              <p>See list of data tools I am familiar with&nbsp&nbsp</p>
+              <button type="button" class="btn" data-toggle="collapse" data-target="#datatools" aria-expanded="false" aria-controls="datatools">
+              <i class="far fa-2x fa-arrow-alt-circle-down mx-auto mt-3"></i></button>
+            </span>
+            <span class="collapse" id="datatools">
+              <ul>
+                  <li>Pandas</li>
+                  <li>matplotlib</li>
+                  <li>Numpy</li>
+                  <li>BeautifulSoup4</li>
+                  <li>NLTK</li>
+                  <li>MySQL</li>
+                  <li>SQLite</li>
+              </ul>
+            </span>
+        </div>
+        <div class="col-12 col-sm-10 mx-auto col-lg-4">
+            <i class="fas fa-chart-pie" style="color:black"></i>
+            <i class="fas fa-chart-area" style="color:black"></i>
+            <h4 class="card-title">Data Visualisation</h4>
+            <p class="card-text">Let's get the most of your data with insightful, interactive visualization that I can craft with D3.js or Bokeh</p>
         </div>
     </div>
 </div>
-
-
+<div class="container-fluid gradient-box mb-5"></div>
+<div class="container">
+    <div class="col-md-12 pt-4 mb-4 ml-md-auto">
+        <h2 class="text-center">See my recent data projects</h2>
+    </div>
+</div>
+<div id="data" class="container-fluid">
+  <div class="row no-gutters align-items-center">
+      <div class="col-md-6">
+          <div class="description">
+              <h4 class="pb-4">Map of market opportunity for vegan restaurants in the USA</h4>
+              <p>The goal for this project was to explore market potential for vegan restaurants in the USA,
+                  by taking under account number of restaurant per state citizen and interest in veganism in each state</p>
+              <!-- <a href="/blog/1" class="btn btn-primary">Read more about the study</a> -->
+              <p class="text-muted mt-4 mb-4">*explore data by hovering over each state</p>
+          </div>
+      </div>
+      <div id="map" class="col-md-6">
+        <div class="mx-auto">
+        {% include "home/includes/v_map_visualisation.html" %}
+            <div class='my-legend mt-3 mb-3 ml-3'>
+                <div class='legend-scale'>
+                  <ul class='legend-labels'>
+                    <li><span style='background:#006d2c;'></span>States with the most vegan options per potential customer</li>
+                    <li><span style='background:#a1d99b;'></span>Considerable high market potential</li>
+                    <li><span style='background:#f7fcf5;'></span>Almost no fully vegan options</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+    <div id="chart" class="col-lg-6">
+      <div class="mx-auto">
+      {% include "home/includes/sp500_sectors_mean.html" %}
+      </div>
+      <div class='row no-gutters my-legend pl-4'>
+        <div class="col-8 col-sm-4 mx-auto">
+          <ul class='legend-labels'>
+            <li><span style='background:#0f0f0a;'></span>Industrials</li>
+            <li><span style='background:#ff9966;'></span>Health Care</li>
+            <li><span style='background:#ba2a20;'></span>Information Technology</li>
+            <li><span style='background:#275597;'></span>Consumer Discretionary</li>
+          </ul>
+        </div>
+        <div class="col-8 col-sm-4 mx-auto">
+          <ul class='legend-labels'>
+            <li><span style='background:#8e43df;'></span>Utilities</li>
+            <li><span style='background:#67d3b4;'></span>Financials</li>
+            <li><span style='background:#663300;'></span>Materials</li>
+            <li><span style='background:#006600;'></span>Real Estate</li>
+          </ul>
+        </div>
+        <div class="col-8 col-sm-4 mx-auto">
+          <ul class='legend-labels'>
+            <li><span style='background:#a9d3d8;'></span>Consumer Staples</li>
+            <li><span style='background:#e6e600;'></span>Energy</li>
+            <li><span style='background:#b69cb4;'></span>Telecommunication Services</li>
+            <li><span style='background:red;'></span>All S&P 500</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="description text-right">
+          <h4 class="pb-4">Graph of mean prices of stocks from all sectors in S&P500 index</h4>
+          <p>On the graph we can see the mean price of stocks from S&P 500 from different economic sectors.<br>
+              For comparison, the red line on the plot is the mean price of all stocks in Standard & Poor's index.</p>
+          <!-- <a href="/blog/7" class="btn btn-primary">Read more about the plot</a> -->
+          <p class="text-muted mt-4 mb-4">*use Box Zoom to have a closer look at prices at recent years</p>
+        </div>
+    </div>
+  </div>
+</div>
 <div class="container location" style="background: url('{% static 'img/wroclaw.jpg' %}')no-repeat center center fixed;">
-    <div class="col-md-11 pt-4 ml-md-auto">
-        <h2 class="text-center pt-5 pb-5">Currently I am looking for a full time position.</h2>
+    <div class="col-md-12 pt-4 ml-md-auto">
+        <h2 class="text-center pt-5 pb-5">I am looking for a place with great people and good coffee to work full time on development of groundbreaking products ideally with use of JavaScript and/or Python.</h2>
     </div>
 
 </div>

@@ -10,7 +10,7 @@
         <meta name="description" content="Custom made data analysis and visualizations. Tell what is your business goal and let's discover what value can we get from the data using Python and its tools."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Titillium+Web|Alice|Dosis:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         {% load staticfiles %}
         <link rel="apple-touch-icon" sizes="76x76" href="{%  static 'apple-touch-icon.png' %}">
@@ -21,6 +21,7 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="{% static 'css/styles_bundle.css' %}">
         <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css" type="text/css" />
+        <script src="{% static 'js/main.bundle.js' %}" ></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,24 +32,36 @@
           ga('send', 'pageview');
         </script>
     </head>
+    <div id="loading" class="container-fluid">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
     <body>
+      <div id="site">
         <ul class="nav justify-content-end">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:#F6F6F6" href="/contact/"><i class="fas fa-envelope"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/piotr-delikat-2b572ab6" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/piotrdelikat" target="_blank"><i class="fab fa-github"></i></a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li> -->
         </ul>
                 {% block content %}
                 {% endblock %}
         <footer>
           <div class="container">
-              <span class="fa-stack mx-auto mt-5 mb-5">
-                <a href="/contact/"><i class="fa fa-2x fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/piotr-delikat-2b572ab6"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/piotrdelikat"><i class="fa fa-2x fa-github mx-auto"></i></a>
-              </span>
+            <div class="d-flex flex-column icons-stack pt-4 pb-4 mx-auto">
+              <a href="/contact/"><i class="fas fa-2x fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/piotr-delikat-2b572ab6" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+              <a href="https://github.com/piotrdelikat" target="_blank" class="mb-5"><i class="fab fa-2x fa-github mx-auto"></i></a>
+              <a id="return-arrow" class="mx-auto" href=""><i class="fas fa-2x fa-chevron-up"></i></a>
+            </div>
           </div>
-          <p class="copy mx-auto">copyright © piotr delikat 2017</p>
+          <p class="copy">copyright © piotr delikat 2018</p>
         </footer>
-        <script src="{% static 'js/bundle.js' %}" ></script>
+      </div>
     </body>
 </html>
